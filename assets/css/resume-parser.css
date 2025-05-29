@@ -1,0 +1,117 @@
+.resume-parser-upload-form {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+    border: 2px dashed #ddd;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.upload-area:hover {
+    border-color: #0073aa;
+    background: #f5f5f5;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+.progress {
+    height: 100%;
+    background: #0073aa;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.parse-results {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.parsed-resume-data .section {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.parsed-resume-data .section:last-child {
+    border-bottom: none;
+}
+
+.parsed-resume-data h4 {
+    color: #23282d;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.education-item,
+.experience-item,
+.certification-item {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.education-item p,
+.experience-item p,
+.certification-item p {
+    margin: 0.5em 0;
+}
+
+.skills p {
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.button:hover {
+    background: #005177;
+}
+
+.description {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-parser-upload-form {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .upload-area {
+        padding: 1em;
+    }
+
+    .parsed-resume-data h4 {
+        font-size: 1.1em;
+    }
+} 

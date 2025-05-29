@@ -1,0 +1,242 @@
+/* Resume Upload Form */
+.resume-parser-upload-form {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-parser-field {
+    margin-bottom: 1.5em;
+}
+
+.resume-parser-field label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.resume-parser-field input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 2px dashed #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.resume-parser-field .description {
+    margin-top: 0.5em;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.resume-parser-submit {
+    margin-top: 2em;
+}
+
+.resume-parser-submit button {
+    padding: 0.8em 2em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Progress Bar */
+.resume-parser-progress {
+    margin: 2em 0;
+    display: none;
+}
+
+.resume-parser-progress-bar {
+    height: 4px;
+    background: #eee;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.resume-parser-progress-fill {
+    height: 100%;
+    background: #2271b1;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.resume-parser-progress-fill.error {
+    background: #dc3232;
+}
+
+.resume-parser-status {
+    margin-top: 0.5em;
+    text-align: center;
+    color: #2271b1;
+}
+
+.resume-parser-status.error {
+    color: #dc3232;
+}
+
+/* Parsed Resume Data */
+.resume-parser-result {
+    margin-top: 2em;
+    display: none;
+}
+
+.resume-parser-data {
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.resume-section {
+    margin-bottom: 2em;
+}
+
+.resume-section:last-child {
+    margin-bottom: 0;
+}
+
+.resume-section h4 {
+    margin: 0 0 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+    color: #1d2327;
+}
+
+.resume-section h5 {
+    margin: 1em 0 0.5em;
+    color: #2271b1;
+}
+
+.resume-section p {
+    margin: 0.5em 0;
+}
+
+.resume-section strong {
+    color: #1d2327;
+}
+
+.resume-section ul {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}
+
+.resume-section li {
+    margin: 0.3em 0;
+}
+
+/* Education & Experience Items */
+.education-item,
+.experience-item {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.education-item:last-child,
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills Section */
+.skills-technical,
+.skills-soft {
+    margin-bottom: 1.5em;
+}
+
+.skills-technical ul,
+.skills-soft ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-technical li,
+.skills-soft li {
+    padding: 0.3em 0.8em;
+    background: #e9ecef;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Resume List */
+.resume-parser-list {
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+.resume-parser-export {
+    margin-bottom: 2em;
+    text-align: right;
+}
+
+.resume-parser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.resume-parser-item {
+    padding: 1.5em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-parser-item h3 {
+    margin: 0 0 1em;
+    font-size: 1.2em;
+    color: #1d2327;
+}
+
+.resume-parser-meta {
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.resume-parser-meta p {
+    margin: 0.3em 0;
+}
+
+.resume-parser-actions {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.resume-parser-actions .button {
+    flex: 1;
+    text-align: center;
+}
+
+.resume-parser-data {
+    margin-top: 1.5em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .resume-parser-upload-form {
+        padding: 1.5em;
+    }
+
+    .resume-parser-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-parser-actions {
+        flex-direction: column;
+    }
+
+    .resume-parser-actions .button {
+        width: 100%;
+    }
+} 

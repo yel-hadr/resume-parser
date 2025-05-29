@@ -1,0 +1,18 @@
+{
+    "name": "wordpress/resume-parser",
+    "description": "A WordPress plugin for parsing resumes using OpenAI API",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "smalot/pdfparser": "^2.0",
+        "ext-zip": "*",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ResumeParser\\": "includes/"
+        }
+    }
+} 

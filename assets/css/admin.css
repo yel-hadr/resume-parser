@@ -1,0 +1,118 @@
+/* Settings Page */
+.resume-parser-settings {
+    max-width: 800px;
+    margin: 2em 0;
+}
+
+.resume-parser-settings h2 {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+/* Form Fields */
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="password"],
+.form-table input[type="number"] {
+    width: 25em;
+    max-width: 100%;
+}
+
+.form-table .description {
+    margin-top: 0.5em;
+    color: #666;
+}
+
+/* API Key Field */
+#openai_api_key {
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+/* Upload Path Field */
+#upload_path {
+    font-family: monospace;
+}
+
+/* Model Settings */
+#model_version {
+    min-width: 200px;
+}
+
+#temperature {
+    width: 80px;
+}
+
+/* Checkbox Fields */
+.form-table input[type="checkbox"] + label {
+    margin-left: 0.5em;
+}
+
+/* Usage Instructions */
+.usage-instructions {
+    margin: 2em 0;
+    padding: 2em;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+.usage-instructions h2 {
+    margin-top: 0;
+}
+
+.usage-instructions code {
+    padding: 0.2em 0.4em;
+    margin: 0 0.2em;
+    background: #f0f0f1;
+    border-radius: 3px;
+}
+
+.usage-instructions ul {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+.usage-instructions li {
+    margin: 0.5em 0;
+}
+
+/* Developer Hooks */
+.developer-hooks {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #ccd0d4;
+}
+
+.developer-hooks code {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    margin: 0.2em 0;
+    background: #f0f0f1;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .form-table th {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .form-table input[type="text"],
+    .form-table input[type="password"],
+    .form-table input[type="number"],
+    .form-table select {
+        width: 100%;
+    }
+} 
